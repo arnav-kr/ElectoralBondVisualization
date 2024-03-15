@@ -1,7 +1,6 @@
 const fs = require("fs");
 
 raw = fs.readFileSync("./public/assets/parties.csv", "utf8");
-// add amounts to make sun total if they share the same name
 let finalCSV = raw.split("\n").map((row, i) => {
   row = row.replaceAll("\f", "").replaceAll(/\s{2,}/gmi, "*").split("*")
   row.shift()

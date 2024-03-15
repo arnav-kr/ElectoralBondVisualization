@@ -1,5 +1,9 @@
-# Vite Vanilla Tailwind Template
+# Electrol Bond Visualization 2019-2024
 
-A Basic starter template for my vanilla vite projects using tailwindcss.
+The Visualization of data released by Election Commission of India
 
-Feel free to use this template for your own projects.
+[[Source]](https://eci.gov.in/disclosure-of-electoral-bonds)
+
+
+![Party wise Electoral Bonds Donation Recieved in India 2019-24]()
+![Top 30 Buyers of Electoral Bonds in India 2019-24]()

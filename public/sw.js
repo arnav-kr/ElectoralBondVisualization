@@ -24,7 +24,7 @@ defaultResponseURL = "/offline.html";
 // TODO: Add your resource's URLs that you want to precache
 const preCacheURLs = [
   defaultResponseURL,
-  // "./",
+  "./",
 ];
 
 
