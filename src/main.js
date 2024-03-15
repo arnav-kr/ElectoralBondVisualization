@@ -2,8 +2,7 @@ import * as d3 from "d3";
 import { Chart, registerables } from 'chart.js';
 Chart.register(...registerables);
 
-// TODO: Uncomment the following lines to enable PWA Support
-// // PWAManager
+// PWAManager
 import { PWAManager } from './js/PWAManager';
 let PWAManagerInstance = new PWAManager({
   serviceWorkerPath: './sw.js',
@@ -41,6 +40,13 @@ const download = (chart, filename) => {
 
 const parties = document.getElementById('parties');
 const buyers = document.getElementById('buyers');
+
+// only allow viewing on large screen
+if (innerWidth < 768) {
+  parties.remove();
+  buyers.remove();
+  document.getElementById('mobile').style.display = "grid";
+}
 
 parties.addEventListener('click', () => download(parties, 'parties'));
 buyers.addEventListener('click', () => download(buyers, 'buyers'));
